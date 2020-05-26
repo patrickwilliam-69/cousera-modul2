@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My first web page.</title>
+
+<style>
+	 * {
+		box-sizing: border-box;
+	}
+	body {
+		width: 100%
+		margin: auto;
+		padding: auto;
+	}
+	.container {
+		width: 100%
+		max-width: 1400px;
+		padding: auto;
+		margin: auto;
+	}
+	p{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		margin: 10px;
+		text-align: justify;
+	}
+	.box {
+		float: left;
+		margin: 5px;
+	}
+	h1{
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 25px;
+	}
+	h2{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		border: inherit;
+		position: relative;
+		float: right;
+		margin: 0px;
+		background-color: #a8a8a8;
+		color:#000000;
+	}
+	.box1{
+		border: inherit;
+		background-color: #fc03ba;
+		padding-bottom: 20px;
+		width: 30%;
+	}
+	.box2{
+		border: inherit;
+		background-color: #fcba03;
+		padding-bottom: 20px;
+		width: 30%;
+	}
+	.box3{
+		border: inherit;
+		background-color: #69bdd2;
+		padding-bottom: 20px;
+		width: 30%;
+	}
+	.clearfix {
+		clear: both;
+	}
+   /*this is for tablet*/
+	@media screen and (max-width: 991px){
+		.box, .box1, .box2 {
+			width: 48%;
+		}
+		.box1 {
+			float: left;
+		}
+		.box2 {
+			float: right;
+		}
+        .box3 {
+        	width: 100%;
+        }
+	}
+	/*this is for mobile*/
+	@media screen and (max-width: 767px){
+	     .box1, .box2, .box3 {
+			width: 100%;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>OUR HISTORY</h1>
+		<div class="box box1">
+			<h2>This is a history</h2>
+			<p>This archive is being compiled to serve as a library of information about different artistic movements, art groups and specific artists. Its purpose is to educate people about the different movements and show people that there are other movements worth looking at, and specific artists that users may never have heard of. We realize that art teachers in highschools and even professors in universities tend to gloss over these movements and forget about them. Thus this archive is endeavouring to include EVERY art movement worthy of mention, no matter how small.</p>
+		</div>
+		<div class="box box2">
+			<h2>This is a ricording</h2>
+			<p>This archive is being compiled to serve as a library of information about different artistic movements, art groups and specific artists. Its purpose is to educate people about the different movements and show people that there are other movements worth looking at, and specific artists that users may never have heard of. We realize that art teachers in highschools and even professors in universities tend to gloss over these movements and forget about them. Thus this archive is endeavouring to include EVERY art movement worthy of mention, no matter how small.</p>
+		</div>
+		<div class="box box3">
+			<h2>This is a recount</h2>
+			<p>This archive is being compiled to serve as a library of information about different artistic movements, art groups and specific artists. Its purpose is to educate people about the different movements and show people that there are other movements worth looking at, and specific artists that users may never have heard of. We realize that art teachers in highschools and even professors in universities tend to gloss over these movements and forget about them. Thus this archive is endeavouring to include EVERY art movement worthy of mention, no matter how small.</p>
+		</div>
+        <div class="clearfix"></div>
+	</div>
+</body>
+</html>
